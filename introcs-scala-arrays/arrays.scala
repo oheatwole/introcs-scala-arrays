@@ -80,21 +80,7 @@ object arrays {
   ///  then at the end sum should contain {9, 3, 14}. 
 
   def pairwiseAdd(a: Array[Int], b: Array[Int], c: Array[Int]) {
-      var Tracker=0
-	  var Return=""
-		while(Tracker!=a.length){
-		c{Tracker}=a{Tracker}+b{Tracker}
-		Tracker+=1
-		}
-		Return+="{"
-		for(z<-0 to c.length-1){
-			Return+=(c(z))
-			if(z!=2){
-				Return+=","
-			}
-		}
-		Return+="}"
-	  	Return
+      
   }
   //NewPairwiseAdd chunk
   ///  Return a new array whose elements are the sums of the
@@ -107,12 +93,6 @@ object arrays {
     val newArray = Array.fill(addSize)(0)
 
     // your code here
-    var Tracker=0
-		while(Tracker!=a.length){
-			newArray{Tracker}=a{Tracker}+b{Tracker}
-			Tracker=Tracker+1
-		}
-
     newArray
   }
   //IsAscending chunk
