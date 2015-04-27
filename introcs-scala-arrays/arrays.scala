@@ -80,13 +80,11 @@ object arrays {
   ///  then at the end sum should contain {9, 3, 14}. 
 
   def pairwiseAdd(a: Array[Int], b: Array[Int], c: Array[Int]) {
-    val results = Array.fill(5)(0)
     var i = 0
-    while(i != 5){
-        results{i} = a{i} + b{i}
+    while(i != a.length){
+        c{i} = a{i} + b{i}
         i = i + 1
     }
-    results
   }
   //NewPairwiseAdd chunk
   ///  Return a new array whose elements are the sums of the
